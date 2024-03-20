@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="GENZ_STORE.png" alt="Logo de la tienda">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#ropa" class="nav-link">Ropa</a></li>
+                <li><a href="#joyas" class="nav-link">Joyas</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor">
+                <path fille-rule="evenodd"
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+            </svg>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="banner3.png" alt="Bienvenido a nuestra tienda en línea">
+    </div>
+    <section id="ropa">
+        <div class="container">
+            <h2>------------------------------------------------------------------ ROPA ---------------------------------------------------------------</h2>
+            <div class="product" id="product1">
+                <img src="https://i.pinimg.com/564x/cc/de/85/ccde8590abf100815b0a06edd19303f8.jpg" class="car">
+                <h3 class="product-name">Suit Money Beish | GENZ</h3>
+                <p class="product-price">$470.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('KitSuit OldMoney Beish | GENZ', 'https://i.pinimg.com/564x/cc/de/85/ccde8590abf100815b0a06edd19303f8.jpg', 470000 )">Comprar</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="https://i.pinimg.com/564x/28/12/a0/2812a05640c5c4f8920592a94c981b07.jpg" class="car">
+                <h3 class="product-name">KitSuit BrownStyle | GENZ</h3>
+                <p class="product-price">$568.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('KitSuit BrownStyle | GENZ', 'https://i.pinimg.com/564x/28/12/a0/2812a05640c5c4f8920592a94c981b07.jpg', 568000 )">Comprar</button>
+            </div>
+            <div class="product" id="product3">
+                <img src="https://i.pinimg.com/564x/11/38/20/113820fdc9a4cabf74668478ce5cee6d.jpg" class="car">
+                <h3 class="product-name">KitSuit BlackBrush | GENZ</h3>
+                <p class="product-price">$450.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('KitSuit BlackBrush | GENZ', 'https://i.pinimg.com/564x/11/38/20/113820fdc9a4cabf74668478ce5cee6d.jpg', 450000 )">Comprar</button>
+            </div>
+            <div class="product" id="product4">
+                <img src="https://i.pinimg.com/564x/27/c9/63/27c96300d08b7c685c352e1ce5a877c4.jpg" class="car">
+                <h3 class="product-name">KitSuit DollingBlue | GENZ</h3>
+                <p class="product-price">$670.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('KitSuit DollingBlue | GENZ', 'https://i.pinimg.com/564x/27/c9/63/27c96300d08b7c685c352e1ce5a877c4.jpg', 670000 )">Comprar</button>
+            </div>
+            <div class="product" id="product5">
+                <img src="https://i.pinimg.com/564x/05/5f/f1/055ff1ddffae1b786ba22d3da4054dda.jpg" class="car">
+                <h3 class="product-name">SuitBlue GWood | GENZ</h3>
+                <p class="product-price">$360.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('SuitBlue GreenWood | GENZ', 'https://i.pinimg.com/564x/05/5f/f1/055ff1ddffae1b786ba22d3da4054dda.jpg', 360000 )">Comprar</button>
+            </div>
+            <div class="product" id="product6">
+                <img src="https://i.pinimg.com/564x/5d/ec/89/5dec89869d16c208753d0202bfc45034.jpg" class="car">
+                <h3 class="product-name">SportsTime Joggers Clean | GENZ</h3>
+                <p class="product-price">$385.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('SportsTime Joggers Clean | GENZ', 'https://i.pinimg.com/564x/5d/ec/89/5dec89869d16c208753d0202bfc45034.jpg', 385000 )">Comprar</button>
+            </div>
+            <div class="product" id="product7">
+                <img src="https://i.pinimg.com/564x/b2/4e/0f/b24e0f747e8a023b8c2b8d6d4717bae6.jpg" class="car">
+                <h3 class="product-name">HoodieColors Sintetica| GENZ</h3>
+                <p class="product-price">$465.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('HoodieColors Sintetica| GENZ', 'https://i.pinimg.com/564x/b2/4e/0f/b24e0f747e8a023b8c2b8d6d4717bae6.jpg', 465000 )">Comprar</button>
+            </div>
+            <div class="product" id="product8">
+                <img src="https://i.pinimg.com/564x/eb/6a/12/eb6a12510a40915d22975f95738538bb.jpg" class="car">
+                <h3 class="product-name">HoodieColors NEON Blue | GENZ</h3>
+                <p class="product-price">$740.900</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('HoodieColors NEON Blue | GENZ', 'https://i.pinimg.com/564x/eb/6a/12/eb6a12510a40915d22975f95738538bb.jpg', 740900 )">Comprar</button>
+            </div>
+            <div class="product" id="product9">
+                <img src="https://i.pinimg.com/564x/d4/39/ae/d439ae548817563ecce6a2f38d9444ac.jpg" class="car">
+                <h3 class="product-name">SportsJackets Sintetic | GENZ</h3>
+                <p class="product-price">$520.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('SportsJackets Sintetic | GENZ', 'https://i.pinimg.com/564x/d4/39/ae/d439ae548817563ecce6a2f38d9444ac.jpg', 520000 )">Comprar</button>
+            </div>
+            <div class="product" id="product10">
+                <img src="https://i.pinimg.com/564x/42/06/19/420619ed99fb1cc9fdd8ff576911831a.jpg" class="car">
+                <h3 class="product-name">YellowSplash BlueHoodie | GENZ</h3>
+                <p class="product-price">$325.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('YellowSplash BlueHoodie | GENZ', 'https://i.pinimg.com/564x/42/06/19/420619ed99fb1cc9fdd8ff576911831a.jpg', 325000 )">Comprar</button>
+            </div>
+        </div>
+    </section>
+    <section id="joyas">
+        <div class="container">
+            <h2>------------------------------------------------------------------ JOYAS ---------------------------------------------------------------</h2>
+            <div class="product" id="product11">
+                <img src="https://i.pinimg.com/564x/1e/b5/69/1eb5690e776bf758880f41e6ea8eef0d.jpg" class="car">
+                <h3 class="product-name">Pulsera y Anillo SilverPearl LUIS VUITTON| GENZ</h3>
+                <p class="product-price">$1.250.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('Pulsera y Anillo SilverPearl LUIS VUITTON| GENZ', 'https://i.pinimg.com/564x/1e/b5/69/1eb5690e776bf758880f41e6ea8eef0d.jpg', 1250000 )">Comprar</button>
+            </div>
+            <div class="product" id="product12">
+                <img src="https://i.pinimg.com/564x/68/7a/4d/687a4db7c049f6127379a095e1b04736.jpg" class="car">
+                <h3 class="product-name">Joyeria Gold DubaPalace TOUS CR | GENZ</h3>
+                <p class="product-price">$3.560.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('Joyeria Gold DubaPalace TOUS CR | GENZ', 'https://i.pinimg.com/564x/68/7a/4d/687a4db7c049f6127379a095e1b04736.jpg', 3560000 )">Comprar</button>
+            </div>
+            <div class="product" id="product13">
+                <img src="https://i.pinimg.com/564x/8a/8a/0f/8a8a0fe926e204fd35f6ec0acff42642.jpg" class="car">
+                <h3 class="product-name">Cadena GoldBlack Hole MISSOMA | GENZ</h3>
+                <p class="product-price">$5.800.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('Cadena GoldBlack Hole MISSOMA | GEN', 'https://i.pinimg.com/564x/8a/8a/0f/8a8a0fe926e204fd35f6ec0acff42642.jpg', 5800000 )">Comprar</button>
+            </div>
+            <div class="product" id="product14">
+                <img src="https://i.pinimg.com/564x/d7/5f/7c/d75f7c9241b0588e893be6a9247622ce.jpg" class="car">
+                <h3 class="product-name">Pulsera SILVERRECC1 R MISSOMA | GENZ </h3>
+                <p class="product-price">$1.250.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('Pulsera SILVERRECC1 Rectangular MISSOMA | GENZ', 'https://i.pinimg.com/564x/d7/5f/7c/d75f7c9241b0588e893be6a9247622ce.jpg', 1250000 )">Comprar</button>
+            </div>
+            <div class="product" id="product15">
+                <img src="https://i.pinimg.com/564x/fa/6e/0c/fa6e0cea1876f328d9a8b3d9c8c568c8.jpg" class="car">
+                <h3 class="product-name">Redirec Silver collar TOUS CRR34|GENZ</h3>
+                <p class="product-price">$3.200.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('Redirec Silver collar TOUS CRR34 |GENZ', 'https://i.pinimg.com/564x/fa/6e/0c/fa6e0cea1876f328d9a8b3d9c8c568c8.jpg', 3200000 )">Comprar</button>
+            </div>
+            <div class="product" id="product16">
+                <img src="https://i.pinimg.com/564x/4e/d8/78/4ed8786940d095c416fa2c8194a29c68.jpg" class="car">
+                <h3 class="product-name">Cadena SILVER16 | GENZ</h3>
+                <p class="product-price">$980.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('Cadena SILVER16 | GENZ', 'https://i.pinimg.com/564x/4e/d8/78/4ed8786940d095c416fa2c8194a29c68.jpg', 980000 )">Comprar</button>
+            </div>
+            <div class="product" id="product17">
+                <img src="https://i.pinimg.com/564x/55/10/1c/55101c4b6e01a22041f7c53f9d97cc44.jpg" class="car">
+                <h3 class="product-name">Cadena GoldCoin | GENZ</h3>
+                <p class="product-price">$1.670.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('Cadena GoldCoin | GENZ', 'https://i.pinimg.com/564x/55/10/1c/55101c4b6e01a22041f7c53f9d97cc44.jpg', 1670000 )">Comprar</button>
+            </div>
+            <div class="product" id="product18">
+                <img src="https://i.pinimg.com/564x/79/3d/01/793d01267ae734e4c85096babc403076.jpg" class="car">
+                <h3 class="product-name">KitGoldWood Kit | GENZ</h3>
+                <p class="product-price">$760.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('KitGoldWood Pulseras | GENZ', 'https://i.pinimg.com/564x/79/3d/01/793d01267ae734e4c85096babc403076.jpg', 760000 )">Comprar</button>
+            </div>
+            <div class="product" id="product19">
+                <img src="https://i.pinimg.com/736x/51/d6/ae/51d6aef7145478b7b8099e23224f954b.jpg" class="car">
+                <h3 class="product-name">Kit Silver LOUPN | GENZ</h3>
+                <p class="product-price">$1.000.00</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('Kit Silver LOUPN | GENZ', 'https://i.pinimg.com/736x/51/d6/ae/51d6aef7145478b7b8099e23224f954b.jpg', 1000000 )">Comprar</button>
+            </div>
+            <div class="product" id="product20">
+                <img src="https://i.pinimg.com/564x/63/0e/ee/630eee8da4455628ee84d3d2f5785b1f.jpg" class="car">
+                <h3 class="product-name">Grecia GL LOUPN | GENZ</h3>
+                <p class="product-price">$2.340.000</p>
+                <button class="add-to-cart-button"
+                    onclick="addToCart('Grecia Golds LOUPN | GENZ', 'https://i.pinimg.com/564x/63/0e/ee/630eee8da4455628ee84d3d2f5785b1f.jpg', 2340000 )">Comprar</button>
+            </div>
+        </div>
+    </section>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <table id="cart-table">
+                <thead>+
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td id="total-price">$0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <a href="#header" class="back-to-top">
+                <img src="GENZ_STORE.png" alt="Logo" class="logo-small">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
